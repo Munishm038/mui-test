@@ -58,10 +58,9 @@ textarea:focus-visible {
 }
 
 .css-953pxc-MuiInputBase-root-MuiInput-root {
-  border: 1px solid #E0E3E7;
+  border: 1px solid #e0e3e7;
   padding: 8px 12px;
   border-radius: 4px;
-
 }
 
 .css-953pxc-MuiInputBase-root-MuiInput-root::before {
@@ -80,4 +79,12 @@ textarea:focus-visible {
   font-size: 17px !important;
   font-weight: 700 !important;
   color: #707070 !important;
+}
+
+button:hover {
+  transition: all 300ms;
+}
+
+button:hover {
+  opacity: 0.5; 
 }

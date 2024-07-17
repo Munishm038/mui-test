@@ -52,10 +52,12 @@ const platforms = [
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
-    padding: theme.spacing(2),
+    padding: theme.spacing(4),
   },
   '& .MuiDialogActions-root': {
-    padding: theme.spacing(1),
+    padding: theme.spacing(4),
+    paddingTop: theme.spacing(2),
+    paddingBottom: theme.spacing(2),
   },
 }));
 
@@ -83,7 +85,7 @@ export default function Home() {
         maxWidth="sm"
         fullWidth={true}
       >
-        <DialogTitle sx={{ m: 0, p: 2 }} id="customized-dialog-title">
+        <DialogTitle sx={{ m: 0, p: 2, paddingLeft : 3 }} id="customized-dialog-title">
           Create Pipeline
         </DialogTitle>
         <IconButton
@@ -101,39 +103,39 @@ export default function Home() {
         <DialogContent dividers style={{ display: 'flex', flexDirection: 'column' }}>
           <FormControl variant="standard">
             <InputLabel shrink htmlFor="name">
-              Name
+              Name*
             </InputLabel>
             <CustomInput className='input' id="name" placeholder="Name" />
           </FormControl>
           <FormControl style={{ marginTop: 10 }} variant="standard">
             <InputLabel shrink htmlFor="description">
-              Description
+              Description*
             </InputLabel>
             <textarea className='input' style={{}} id='description' placeholder="Description" />
           </FormControl>
           <FormControl style={{ marginTop: 10 }} variant="standard">
             <InputLabel shrink htmlFor="domains">
-              Domains
+              Domains*
             </InputLabel>
             <CustomSelect data={domains} id={"domains"} selectBy={""} placeholder={"Domains"} />
           </FormControl>
           <FormControl style={{ marginTop: 10 }} variant="standard">
             <InputLabel shrink htmlFor="dataProducts">
-              Data products
+              Data products*
             </InputLabel>
             <CustomSelect data={dataProducts} id={"dataProducts"} selectBy={""} placeholder={"Data products"} />
           </FormControl>
           <FormControl style={{ marginTop: 10 }} variant="standard">
             <InputLabel shrink htmlFor="platforms">
-              Platforms
+              Platforms*
             </InputLabel>
             <CustomSelect data={platforms} id={"platforms"} selectBy={""} placeholder={"Platforms"} />
           </FormControl>
         </DialogContent>
         <DialogActions>
-          <Button autoFocus onClick={handleClose}>
-            Save
-          </Button>
+          <button onClick={handleClose} style={{ borderWidth: 1, borderColor: '#d3d3d3', backgroundColor: '#FFF', cursor: 'pointer', padding: "10px 20px", borderRadius: 4 }}>Cancel</button>
+          <div  />
+          <button onClick={handleClose} style={{ borderWidth: 0, backgroundColor: '#1976D2', cursor: 'pointer', padding: "10px 20px", color: '#FFF', borderRadius: 4 }}>Create</button>
         </DialogActions>
       </BootstrapDialog>
     </React.Fragment>

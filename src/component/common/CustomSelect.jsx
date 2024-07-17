@@ -12,10 +12,8 @@ export const CustomSelect = ({ data, selectBy, id, placeholder }) => {
     return <Autocomplete
         {...defaultProps}
         id={id}
-        key={id}
-        disableCloseOnSelect
-        style={{ marginTop: 24}}
-        className='input'
+        style={{ marginTop: 24 }}
+        className='input' 
         renderInput={(params) => (
             <TextField {...params} label="" variant="standard" placeholder={placeholder} style={{ paddingBottom: 9 }} />
         )}
