@@ -1,13 +1,83 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #1c2025;
+  background: #fff;
+  border: 1px solid #dae2ed;
+  box-shadow: 0px 2px 2px #f3f6f9;
+  margin-top: 24px;
+}
+
+textarea:hover {
+  border-color: #3399ff;
+}
+
+textarea:focus {
+  border-color: #3399ff;
+  box-shadow: 0 0 0 3px #b6daff;
+}
+
+textarea:focus-visible {
+  outline: 0;
+}
+
+.input-label {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+}
+
+*::placeholder {
+  color: #000 !important;
+  opacity: 0.5; /* Firefox */
+  font-size: 14px;
+}
+
+*::-ms-input-placeholder {
+  /* Edge 12-18 */
+  color: 0.5 !important;
+}
+
+.css-953pxc-MuiInputBase-root-MuiInput-root {
+  border: 1px solid #E0E3E7;
+  padding: 8px 12px;
+  border-radius: 4px;
+
+}
+
+.css-953pxc-MuiInputBase-root-MuiInput-root::before {
+  border-bottom: 0 !important;
+}
+
+.css-953pxc-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: 0 !important;
+}
+
+.css-ka7ti6-MuiAutocomplete-root .MuiInput-root .MuiInput-input {
+  padding-bottom: 9px !important;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #707070 !important;
 }
